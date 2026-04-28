@@ -17,6 +17,20 @@ class PortalHomeViewModel {
     isLoading.value = false;
   }
 
+  void toggleSubjectExpansion(String code) {
+    subjects.value = subjects.value
+        .map((subject) {
+          if (subject.code == code) {
+            return subject.copyWith(isExpanded: !subject.isExpanded);
+          }
+          if (subject.isExpanded) {
+            return subject.copyWith(isExpanded: false);
+          }
+          return subject;
+        })
+        .toList(growable: false);
+  }
+
   void dispose() {
     subjects.dispose();
     isLoading.dispose();
