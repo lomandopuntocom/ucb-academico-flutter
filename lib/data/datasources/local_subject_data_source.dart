@@ -12,7 +12,6 @@ class LocalSubjectDataSource {
         code: 'SIS-420',
         name: 'PLATAFORMAS MÓVILES',
         score: 87,
-        total: 100,
         teacher: 'Ing. Percy Tomicha',
         credits: 4,
         breakdown: SubjectGradeBreakdown(
@@ -29,7 +28,6 @@ class LocalSubjectDataSource {
         code: 'SIS-431',
         name: 'MACHINE LEARNING',
         score: 100,
-        total: 100,
         teacher: 'Ing. Pedro Campos',
         credits: 4,
         breakdown: SubjectGradeBreakdown(
@@ -46,7 +44,6 @@ class LocalSubjectDataSource {
         code: 'SIS-413',
         name: 'TALLER DE DISEÑO DE SOFTWARE II',
         score: 89,
-        total: 100,
         teacher: 'Ing. Raiden Makio Tomori',
         credits: 4,
         breakdown: SubjectGradeBreakdown(
@@ -63,7 +60,6 @@ class LocalSubjectDataSource {
         code: 'SIS-422',
         name: 'COMPUTACION EN LA NUBE',
         score: 84,
-        total: 100,
         teacher: 'Ing. Fabrizio Bellido',
         credits: 4,
         breakdown: SubjectGradeBreakdown(
@@ -80,7 +76,6 @@ class LocalSubjectDataSource {
         code: 'SIS-418',
         name: 'APP WEB II',
         score: 49,
-        total: 100,
         teacher: 'Lic. Gonzalo Calle',
         credits: 4,
         breakdown: SubjectGradeBreakdown(
