@@ -77,7 +77,7 @@ class PortalHeader extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         const Text(
-                          'ALEJANDRO TORRES C.',
+                          'Jean Paul Cabrera F.',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 15,
@@ -87,7 +87,7 @@ class PortalHeader extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
                         const Text(
-                          'Carrera: Ingeniería de Sistemas',
+                          'Carrera: Ingeniería de Software',
                           style: TextStyle(
                             color: Color(0xD9FFFFFF),
                             fontSize: 12,
@@ -96,7 +96,7 @@ class PortalHeader extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         const Text(
-                          '3º Semestre  |  Registro: 10456',
+                          '7º Semestre  |  Registro: 10456',
                           style: TextStyle(
                             color: Color(0xBFFFFFFF),
                             fontSize: 11.5,
