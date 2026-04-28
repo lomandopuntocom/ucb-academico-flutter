@@ -20,7 +20,7 @@ class Subject {
   final String code;
   final String name;
   final int score;
-  final int total;
+  final int total = 100;
   final String teacher;
   final int credits;
   final SubjectGradeBreakdown breakdown;
@@ -32,7 +32,6 @@ class Subject {
     required this.code,
     required this.name,
     required this.score,
-    required this.total,
     required this.teacher,
     required this.credits,
     required this.breakdown,
@@ -41,7 +40,7 @@ class Subject {
     required this.iconColor,
   });
 
-  double get progress => total == 0 ? 0 : score / total;
+  double get progress => score / total;
 
   bool get isApproved => score >= 51;
 
@@ -49,7 +48,6 @@ class Subject {
     String? code,
     String? name,
     int? score,
-    int? total,
     String? teacher,
     int? credits,
     SubjectGradeBreakdown? breakdown,
@@ -61,7 +59,6 @@ class Subject {
       code: code ?? this.code,
       name: name ?? this.name,
       score: score ?? this.score,
-      total: total ?? this.total,
       teacher: teacher ?? this.teacher,
       credits: credits ?? this.credits,
       breakdown: breakdown ?? this.breakdown,

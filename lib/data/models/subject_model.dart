@@ -6,7 +6,7 @@ class SubjectModel {
   final String code;
   final String name;
   final int score;
-  final int total;
+  final int total = 100;
   final String teacher;
   final int credits;
   final SubjectGradeBreakdown breakdown;
@@ -18,7 +18,6 @@ class SubjectModel {
     required this.code,
     required this.name,
     required this.score,
-    required this.total,
     required this.teacher,
     required this.credits,
     required this.breakdown,
@@ -32,7 +31,6 @@ class SubjectModel {
       code: code,
       name: name,
       score: score,
-      total: total,
       teacher: teacher,
       credits: credits,
       breakdown: breakdown,
@@ -47,7 +45,6 @@ class SubjectModel {
       code: subject.code,
       name: subject.name,
       score: subject.score,
-      total: subject.total,
       teacher: subject.teacher,
       credits: subject.credits,
       breakdown: subject.breakdown,
