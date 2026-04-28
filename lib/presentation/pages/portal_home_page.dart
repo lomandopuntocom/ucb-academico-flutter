@@ -6,6 +6,7 @@ import '../../domain/entities/subject.dart';
 import '../../domain/usecases/get_subjects.dart';
 import '../viewmodels/portal_home_viewmodel.dart';
 import '../widgets/portal_header.dart';
+import '../widgets/semester_card.dart';
 import '../widgets/subject_card.dart';
 
 class PortalHomePage extends StatefulWidget {
@@ -38,7 +39,23 @@ class _PortalHomePageState extends State<PortalHomePage> {
       backgroundColor: const Color(0xFFF0F4F8),
       body: Column(
         children: [
-          const PortalHeader(),
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              const PortalHeader(),
+              const Positioned(
+                bottom: -36,
+                left: 0,
+                right: 0,
+                child: SemesterCard(
+                  semester: 'SEMESTRE I - 2026',
+                  currentAverage: 88,
+                  total: 100,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 48),
           Expanded(
             child: ValueListenableBuilder<List<Subject>>(
               valueListenable: _viewModel.subjects,
