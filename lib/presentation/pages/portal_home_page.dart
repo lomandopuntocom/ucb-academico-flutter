@@ -44,15 +44,21 @@ class _PortalHomePageState extends State<PortalHomePage> {
               valueListenable: _viewModel.subjects,
               builder: (context, subjects, child) {
                 if (subjects.isEmpty) {
-                  return const Center(
-                    child: CircularProgressIndicator(),
-                  );
+                  return const Center(child: CircularProgressIndicator());
                 }
                 return ListView.separated(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 20,
+                  ),
                   itemCount: subjects.length,
-                  separatorBuilder: (context, index) => const SizedBox(height: 12),
-                  itemBuilder: (context, index) => SubjectCard(subject: subjects[index]),
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(height: 12),
+                  itemBuilder: (context, index) => SubjectCard(
+                    subject: subjects[index],
+                    onTap: () =>
+                        _viewModel.toggleSubjectExpansion(subjects[index].code),
+                  ),
                 );
               },
             ),
