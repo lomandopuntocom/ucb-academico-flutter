@@ -11,11 +11,7 @@ class PortalHeader extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF0D2B5E),
-            Color(0xFF1A3A6B),
-            Color(0xFF1E4080),
-          ],
+          colors: [Color(0xFF0D2B5E), Color(0xFF1A3A6B), Color(0xFF1E4080)],
         ),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(28),
@@ -32,7 +28,7 @@ class PortalHeader extends StatelessWidget {
       child: SafeArea(
         bottom: false,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 16, 20, 28),
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 48),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
